@@ -117,7 +117,7 @@ class Notification {
         $this->status = $order["status"];
         $this->oldStatus = $order["old_status"];
         $this->riskScore = $order["risk_score"] ?? 0;
-        $this->riskScore = $order["risk_indicators"] ?? [];
+        $this->riskIndicators = $order["risk_indicators"] ?? [];
         $this->description = $order["description"];
 
         if (isset($order["category"])) { 
